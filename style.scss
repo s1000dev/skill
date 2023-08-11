@@ -1,3 +1,221 @@
-html{
+*{
 	box-sizing: border-box;
+}
+html{
+	font-family: sans-serif;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+img{
+	max-width: 100%;
+}
+
+.container {
+	max-width: 2000px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.title{
+	margin-bottom: 20px;
+	margin-left: 40px;
+}
+
+
+.header {
+	margin-top: 30px;
+	margin-bottom: 70px;
+
+	&__inner {
+	}
+
+	&__info {
+		display: flex;
+		align-items: center;
+		margin-bottom: 30px;
+	}
+
+	&__img {
+	}
+
+	&__phone {
+	}
+
+	&__office {
+		margin-left: auto;
+	}
+
+	&__menu {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__list {
+		display: flex;
+		align-items: center;
+		gap: 45px;
+	}
+
+	&__list-item {
+	}
+
+	&__link {
+	}
+
+	&__btns {
+	}
+
+	&__tour {
+	}
+
+	&__call {
+	}
+}
+
+.offers {
+	margin-bottom: 70px;
+
+	&__inner {
+	}
+
+	&__title {
+	}
+
+	&__cards {
+		display: flex;
+		flex-direction: column;
+		max-height: 340px;
+		flex-wrap: wrap;
+		gap: 24px;
+	}
+
+	&__card {
+		flex: 1 0 50%;
+	}
+
+	&__card:nth-child(3){
+		
+	}
+
+	&__card-title {
+	}
+
+	&__card-price {
+	}
+
+	&__card-btn {
+	}
+}
+
+.services {
+
+	&__inner {
+	}
+
+	&__title {
+	}
+
+	&__cards {
+		display: flex;
+		gap: 24px;
+		flex-wrap: wrap;
+	}
+
+	&__card {
+		max-width: 573px;
+	}
+
+	&__card-img {
+	}
+
+	&__card-text {
+	}
+
+	&__card-title {
+	}
+
+	&__card-description {
+	}
+}
+
+.pros {
+
+	&__inner {
+	}
+
+	&__title {
+	}
+
+	&__cards {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 22px;
+	}
+
+	&__card {
+		max-width: 276px;
+	}
+
+	&__card-img {
+	}
+
+	&__text {
+	}
+}
+
+.placement {
+
+	&__inner {
+	}
+
+	&__title {
+	}
+
+	&__cards {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 24px;
+	}
+
+	&__card {
+		max-width: 374px;
+		max-height: 440px;
+	}
+
+	&__img{
+	}
+
+	&__card-inner {
+	}
+
+	&__features {
+	}
+
+	&__price {
+	}
+
+	&__stars {
+	}
+
+	&__info {
+	}
+
+	&__name {
+	}
+
+	&__location {
+	}
+
+	&__btn {
+	}
+
+	&__options {
+	}
 }

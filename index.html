@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+	<link rel="stylesheet" href="/dist/normalize.css">
 	<link rel="stylesheet" href="/dist/style.css">
 </head>
 
@@ -13,24 +14,36 @@
 		<div class="container">
 			<div class="header__inner">
 				<div class="header__info">
-					<img src="/img/logo.png" alt="" class="header__img">
+					<a href="#" class="header__img-link">
+						<img src="/img/logo.png" alt="Лагуна - сеть отелей" class="header__img">
+					</a>
 					<p class="header__phone">+7 495 322-54-48</p>
-					<button class="header__office">Личный кабинет</button>
+					<a href="#" class="header__office">Личный кабинет</a>
 				</div>
 				<nav class="header__menu">
 					<ul class="header__list">
 						<li class="header__list-item">
 							<a href="#" class="header__link">О нас</a>
+						</li>
+						<li class="header__list-item">
 							<a href="#" class="header__link">Услуги</a>
+						</li>
+						<li class="header__list-item">
 							<a href="#" class="header__link">Преимущества</a>
+						</li>
+						<li class="header__list-item">
 							<a href="#" class="header__link">Размещение</a>
+						</li>
+						<li class="header__list-item">
 							<a href="#" class="header__link">Блог</a>
+						</li>
+						<li class="header__list-item">
 							<a href="#" class="header__link">Контакты</a>
 						</li>
 					</ul>
 					<div class="header__btns">
-						<a href="#" class="header__tour">Хочу тур</a>
-						<a href="#" class="header__call">Обратный звонок</a>
+						<button class="header__tour">Хочу тур</button>
+						<button class="header__call">Обратный звонок</button>
 					</div>
 				</nav>
 			</div>
@@ -81,7 +94,6 @@
 					<h2 class="services__title title">Услуги</h2>
 					<div class="services__cards">
 						<div class="services__card">
-							<img class="services__card-img" src="img/services-1.jpg" alt="">
 							<div class="services__card-text">
 								<h3 class="services__card-title">Эксклюзивное обслуживание</h3>
 								<p class="services__card-description">Равным образом постоянный количественный рост
@@ -89,7 +101,6 @@
 							</div>
 						</div>
 						<div class="services__card">
-							<img class="services__card-img" src="img/services-2.jpg" alt="">
 							<div class="services__card-text">
 								<h3 class="services__card-title">Аренда банкетных залов</h3>
 								<p class="services__card-description">Значимость этих проблем настолько очевидна,
@@ -97,7 +108,6 @@
 							</div>
 						</div>
 						<div class="services__card">
-							<img class="services__card-img" src="img/services-3.jpg" alt="">
 							<div class="services__card-text">
 								<h3 class="services__card-title">Сауны, бассейны, бани, фитнес-залы</h3>
 								<p class="services__card-description">Не следует, однако забывать, что начало
@@ -105,7 +115,6 @@
 							</div>
 						</div>
 						<div class="services__card">
-							<img class="services__card-img" src="img/services-4.jpg" alt="">
 							<div class="services__card-text">
 								<h3 class="services__card-title">Охраняемые автомобильные стоянки</h3>
 								<p class="services__card-description">Не следует, однако забывать, что начало
@@ -171,7 +180,7 @@
 					<h2 class="placement__title title">Размещение</h2>
 					<div class="placement__cards">
 						<div class="placement__card">
-							<img src="img/placement-1.jpg" alt="" class="placement-img">
+							<img src="img/placement-1.jpg" alt="" class="placement__img">
 							<div class="placement__card-inner">
 								<div class="placement__features">
 									<div class="placement__price">
@@ -188,14 +197,14 @@
 									</div>
 								</div>
 								<div class="placement__info">
-									<p class="placement__name">Lagoona española</p>
+									<strong class="placement__name">Lagoona española</strong>
 									<p class="placement__location">Барселона, Испания</p>
-									<a href="#" class="placement__btn btn">Номера</a>
+									<button href="#" class="placement__btn btn">Номера</button>
 								</div>
 							</div>
 						</div>
 						<div class="placement__card">
-							<img src="img/placement-2.jpg" alt="" class="placement-img">
+							<img src="img/placement-2.jpg" alt="" class="placement__img">
 							<div class="placement__card-inner">
 								<div class="placement__features">
 									<div class="placement__price">
@@ -212,14 +221,14 @@
 									</div>
 								</div>
 								<div class="placement__info">
-									<p class="placement__name">Lagoona son típicas</p>
+									<strong class="placement__name">Lagoona son típicas</strong>
 									<p class="placement__location">Барселона, Испания</p>
-									<a href="#" class="placement__btn btn">Номера</a>
+									<button href="#" class="placement__btn btn">Номера</button>
 								</div>
 							</div>
 						</div>
 						<div class="placement__card">
-							<img src="img/placement-3.jpg" alt="" class="placement-img">
+							<img src="img/placement-3.jpg" alt="" class="placement__img">
 							<div class="placement__card-inner">
 								<div class="placement__features">
 									<div class="placement__price">
@@ -236,14 +245,14 @@
 									</div>
 								</div>
 								<div class="placement__info">
-									<p class="placement__name">Lagoona de la guerra</p>
+									<strong class="placement__name">Lagoona de la guerra</strong>
 									<p class="placement__location">Барселона, Испания</p>
-									<a href="#" class="placement__btn btn">Номера</a>
+									<button href="#" class="placement__btn btn">Номера</button>
 								</div>
 							</div>
 						</div>
 						<div class="placement__card">
-							<img src="img/placement-4.jpg" alt="" class="placement-img">
+							<img src="img/placement-4.jpg" alt="" class="placement__img">
 							<div class="placement__card-inner">
 								<div class="placement__features">
 									<div class="placement__price">
@@ -260,14 +269,14 @@
 									</div>
 								</div>
 								<div class="placement__info">
-									<p class="placement__name">Lagoona mentira piadosa</p>
+									<strong class="placement__name">Lagoona mentira piadosa</strong>
 									<p class="placement__location">Барселона, Испания</p>
-									<a href="#" class="placement__btn btn">Номера</a>
+									<button href="#" class="placement__btn btn">Номера</button>
 								</div>
 							</div>
 						</div>
 						<div class="placement__card">
-							<img src="img/placement-5.jpg" alt="" class="placement-img">
+							<img src="img/placement-5.jpg" alt="" class="placement__img">
 							<div class="placement__card-inner">
 								<div class="placement__features">
 									<div class="placement__price">
@@ -284,14 +293,14 @@
 									</div>
 								</div>
 								<div class="placement__info">
-									<p class="placement__name">Lagoona empujar la creatividad</p>
+									<strong class="placement__name">Lagoona empujar la creatividad</strong>
 									<p class="placement__location">Барселона, Испания</p>
-									<a href="#" class="placement__btn btn">Номера</a>
+									<button href="#" class="placement__btn btn">Номера</button>
 								</div>
 							</div>
 						</div>
 						<div class="placement__card">
-							<img src="img/placement-6.jpg" alt="" class="placement-img">
+							<img src="img/placement-6.jpg" alt="" class="placement__img">
 							<div class="placement__card-inner">
 								<div class="placement__features">
 									<div class="placement__price">
@@ -308,14 +317,14 @@
 									</div>
 								</div>
 								<div class="placement__info">
-									<p class="placement__name">Lagoona el retorno</p>
+									<strong class="placement__name">Lagoona el retorno</strong>
 									<p class="placement__location">Барселона, Испания</p>
-									<a href="#" class="placement__btn btn">Номера</a>
+									<button href="#" class="placement__btn btn">Номера</button>
 								</div>
 							</div>
 						</div>
 						<div class="placement__card">
-							<img src="img/placement-7.jpg" alt="" class="placement-img">
+							<img src="img/placement-7.jpg" alt="" class="placement__img">
 							<div class="placement__card-inner">
 								<div class="placement__features">
 									<div class="placement__price">
@@ -332,14 +341,14 @@
 									</div>
 								</div>
 								<div class="placement__info">
-									<p class="placement__name">Lagoona mentira piadosa</p>
+									<strong class="placement__name">Lagoona mentira piadosa</strong>
 									<p class="placement__location">Барселона, Испания</p>
-									<a href="#" class="placement__btn btn">Номера</a>
+									<button href="#" class="placement__btn btn">Номера</button>
 								</div>
 							</div>
 						</div>
 						<div class="placement__card">
-							<img src="img/placement-8.jpg" alt="" class="placement-img">
+							<img src="img/placement-8.jpg" alt="" class="placement__img">
 							<div class="placement__card-inner">
 								<div class="placement__features">
 									<div class="placement__price">
@@ -356,39 +365,15 @@
 									</div>
 								</div>
 								<div class="placement__info">
-									<p class="placement__name">Lagoona suerte siguió siempre</p>
+									<strong class="placement__name">Lagoona suerte siguió siempre</strong>
 									<p class="placement__location">Барселона, Испания</p>
-									<a href="#" class="placement__btn btn">Номера</a>
+									<button href="#" class="placement__btn btn">Номера</button>
 								</div>
 							</div>
 						</div>
 						<div class="placement__card">
-							<img src="img/placement-1.jpg" alt="" class="placement-img">
+							<img src="img/placement-9.jpg" alt="" class="placement__img">
 							<a href="#" class="placement__options">Посмотреть все варианты</a>
-						</div>
-						<div class="placement__card">
-							<img src="img/placement-1.jpg" alt="" class="placement-img">
-							<div class="placement__card-inner">
-								<div class="placement__features">
-									<div class="placement__price">
-										<span>от</span>
-										<span></span>
-										<span>/ ночь</span>
-									</div>
-									<div class="placement__stars">
-										<img src="img/star.svg" alt="">
-										<img src="img/star.svg" alt="">
-										<img src="img/star.svg" alt="">
-										<img src="img/star.svg" alt="">
-										<img src="img/star.svg" alt="">
-									</div>
-								</div>
-								<div class="placement__info">
-									<p class="placement__name"></p>
-									<p class="placement__location">Барселона, Испания</p>
-									<a href="#" class="placement__btn btn">Номера</a>
-								</div>
-							</div>
 						</div>
 					</div>
 				</div>

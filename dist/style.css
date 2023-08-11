@@ -1,3 +1,93 @@
-html {
+* {
   box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.title {
+  margin-bottom: 20px;
+  margin-left: 40px;
+}
+
+.header {
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+.header__info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.header__office {
+  margin-left: auto;
+}
+.header__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__list {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+.offers {
+  margin-bottom: 70px;
+}
+.offers__cards {
+  display: flex;
+  flex-direction: column;
+  max-height: 340px;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.offers__card {
+  flex: 1 0 50%;
+}
+.services__cards {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.services__card {
+  max-width: 573px;
+}
+.pros__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+.pros__card {
+  max-width: 276px;
+}
+.placement__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.placement__card {
+  max-width: 374px;
+  max-height: 440px;
 }
