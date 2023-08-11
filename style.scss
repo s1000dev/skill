@@ -1,8 +1,51 @@
+$white: #fff;
+$black: #000;
+$grey: #666666;
+$light-grey: #999999;
+$accent: #CC9933;
+
+@font-face {
+	font-family: 'Muller';
+	src:  url('/fonts/MullerLight.woff2') format('woff2'),
+		url('/fonts/MullerLight.woff') format('woff');
+	font-display: swap;
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'Muller';
+	src:  url('/fonts/MullerRegular.woff2') format('woff2'),
+		url('/fonts/MullerRegular.woff') format('woff');
+	font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'Muller';
+	src:  url('/fonts/MullerMedium.woff2') format('woff2'),
+		url('/fonts/MullerMedium.woff') format('woff');
+	font-display: swap;
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'Muller';
+	src:  url('/fonts/MullerBold.woff2') format('woff2'),
+		url('/fonts/MullerBold.woff') format('woff');
+	font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+}
+
 *{
 	box-sizing: border-box;
 }
 html{
-	font-family: sans-serif;
+	font-family: 'Muller', sans-serif;
+	font-weight: 400; 
+}
+body{
+	background-color: #f1f1f1;
 }
 a{
 	text-decoration: none;
@@ -17,7 +60,7 @@ img{
 }
 
 .container {
-	max-width: 2000px;
+	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 15px;
 }
@@ -27,57 +70,184 @@ img{
 	margin-left: 40px;
 }
 
+.header-link{
+	&:hover{
+		color: $accent;
+	}
+	&:focus{
+		color: $accent;
+		padding: 5px;
+		border: 1px solid $accent;
+	}
+	&:active{
+		color: #A47312;
+	}
+}
+
+.link{
+	color: $accent;
+	&:hover{
+		color: #F0BF5F;
+		svg{
+			path{
+				fill: #F0BF5F;
+			}
+		}
+	}
+	&:focus{
+		color: $accent;
+		padding: 5px;
+		border: 1px solid $accent;
+		svg{
+			path{
+				fill: $accent;
+			}
+		}
+	}
+	&:active{
+		color: #A47312;
+		svg{
+			path{
+				fill: $accent;
+			}
+		}
+	}
+}
+
+.btn{
+	padding: 11px 19px;
+	border-radius: 10px;
+	display: block;
+	background-color: $white;
+	color: $accent;
+	border: 1px solid $accent;
+	cursor: pointer;
+
+	&:hover, &:focus, &:active{
+		color: $white;
+	}
+	&:hover, &:focus{
+		background-color: $accent;
+	}
+	&:active{
+		border: 1px solid #A47312;
+		background-color: #A47312;
+	}
+}
+
+//!!!!!!!!!!!!!!!!!!!!!
 
 .header {
 	margin-top: 30px;
 	margin-bottom: 70px;
 
-	&__inner {
-	}
-
 	&__info {
 		display: flex;
 		align-items: center;
-		margin-bottom: 30px;
-	}
-
-	&__img {
+		margin-bottom: 26px;
 	}
 
 	&__phone {
+		color: $grey;
+		font-size: 20px;
+		font-weight: 500;
+		margin-left: 40px;
+		margin-bottom: 2px;
 	}
-
-	&__office {
+	
+	&__office{
+		margin-bottom: 5px;
+		display: flex;
 		margin-left: auto;
+		span{
+			margin-top: 4px;
+			margin-left: 5px;
+		}
 	}
 
 	&__menu {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		padding: 13px 45px;
+		background-color: $white;
+		border-radius: 15px;
 	}
 
 	&__list {
 		display: flex;
 		align-items: center;
-		gap: 45px;
-	}
-
-	&__list-item {
+		justify-content: space-between;
+		min-width: 642px;
 	}
 
 	&__link {
+		color: $grey;
 	}
 
 	&__btns {
-	}
-
-	&__tour {
-	}
-
-	&__call {
+		display: flex;
+		gap: 40px;
+		align-items: center;
 	}
 }
+
+// @media(max-width: 1150px){
+// 	.header {
+// 		margin-top: 30px;
+// 		margin-bottom: 70px;
+	
+// 		&__info {
+// 			display: flex;
+// 			align-items: center;
+// 			margin-bottom: 26px;
+// 		}
+	
+// 		&__phone {
+// 			color: $grey;
+// 			font-size: 20px;
+// 			font-weight: 500;
+// 			margin-left: 40px;
+// 			margin-bottom: 2px;
+// 		}
+		
+// 		&__office{
+// 			margin-bottom: 5px;
+// 			display: flex;
+// 			margin-left: auto;
+// 			span{
+// 				margin-top: 4px;
+// 				margin-left: 5px;
+// 			}
+// 		}
+	
+// 		&__menu {
+// 			display: flex;
+// 			align-items: center;
+// 			justify-content: space-between;
+// 			padding: 13px 45px;
+// 			background-color: $white;
+// 			border-radius: 15px;
+// 		}
+	
+// 		&__list {
+// 			display: flex;
+// 			align-items: center;
+// 			justify-content: space-between;
+// 			min-width: 642px;
+// 		}
+	
+// 		&__link {
+// 			color: $grey;
+// 		}
+	
+// 		&__btns {
+// 			display: flex;
+// 			gap: 40px;
+// 			align-items: center;
+// 		}
+// 	}
+// }
 
 .offers {
 	margin-bottom: 70px;
