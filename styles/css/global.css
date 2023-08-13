@@ -1,0 +1,77 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.title {
+  margin: 0;
+  margin-bottom: 20px;
+  margin-left: 40px;
+  font-size: 40px;
+  color: #333333;
+  font-weight: 400;
+}
+
+@media (max-width: 480px) {
+  .title {
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+}
+.header-link:hover {
+  color: #CC9933;
+}
+.header-link:focus {
+  color: #CC9933;
+  padding: 5px;
+  border: 1px solid #CC9933;
+}
+.header-link:active {
+  color: #A47312;
+}
+
+.link {
+  color: #CC9933;
+}
+.link:hover {
+  color: #F0BF5F;
+}
+.link:hover svg path {
+  fill: #F0BF5F;
+}
+.link:focus {
+  color: #CC9933;
+  padding: 5px;
+  border: 1px solid #CC9933;
+}
+.link:focus svg path {
+  fill: #CC9933;
+}
+.link:active {
+  color: #A47312;
+}
+.link:active svg path {
+  fill: #CC9933;
+}
+
+.btn {
+  padding: 11px 19px;
+  border-radius: 10px;
+  display: block;
+  background-color: #fff;
+  color: #CC9933;
+  border: 1px solid #CC9933;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.btn:hover, .btn:focus, .btn:active {
+  color: #fff;
+}
+.btn:hover, .btn:focus {
+  background-color: #CC9933;
+}
+.btn:active {
+  border: 1px solid #A47312;
+  background-color: #A47312;
+}
