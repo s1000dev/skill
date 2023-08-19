@@ -348,9 +348,6 @@ img{
 }
 @media(max-width: 420px){
 	.offers{
-		&__title{
-			font-size: 26px;
-		}
 		&__cards{
 			grid-template-columns: 290px;
 			grid-template-rows: repeat(258, 4);
@@ -405,10 +402,6 @@ img{
 
 @media(max-width: 480px){
 	.about{
-		&__title{
-			margin-bottom: 15px;
-			margin-left: 10px;
-		}
 		&__text{
 			font-size: 14px;
 		}
@@ -418,6 +411,7 @@ img{
 //!!!!!!!!!!!!!
 
 .services {
+	margin-bottom: 82px;
 
 	&__inner {
 	}
@@ -568,11 +562,13 @@ img{
 //!!!!!!!!!!!!!
 
 .pros {
-
+	margin-bottom: 82px;
+	
 	&__inner {
 	}
 
 	&__title {
+		margin-bottom: 30px;
 	}
 
 	&__cards {
@@ -583,14 +579,24 @@ img{
 
 	&__card {
 		max-width: 276px;
+		padding: 40px 43px 32px 45px;
+		background-color: $white;
+		border-radius: 15px;
 	}
 
 	&__card-img {
 	}
 
 	&__text {
+		margin: 0;
+		margin-top: 7px;
+		line-height: 200%;
+		color: $black;
+		max-width: 189px;
 	}
 }
+
+//!!!!!!!!!!!!!
 
 .placement {
 
@@ -598,10 +604,12 @@ img{
 	}
 
 	&__title {
+		margin-bottom: 31px;
 	}
 
 	&__cards {
 		display: flex;
+		justify-content: center;
 		flex-wrap: wrap;
 		gap: 24px;
 	}
@@ -615,29 +623,91 @@ img{
 	}
 
 	&__card-inner {
+		background-color: $white;
+		padding: 45px;
+		padding-top: 31px;
+		border-radius: 0 0 15px 15px;
 	}
 
 	&__features {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 16px;
 	}
 
 	&__price {
+		& span:first-child{
+			color: $light-grey;
+		}
+		strong{
+			margin-right: 10px;
+			color: $black;
+			font-size: 20px;
+			font-weight: 700;
+		}
 	}
 
 	&__stars {
+		margin-top: -3px;
+		display: flex;
+		gap: 6px;
 	}
 
 	&__info {
 	}
 
 	&__name {
+		color: $black;
+		margin-bottom: 16px;
 	}
 
 	&__location {
+		color: $light-grey;
+		margin-bottom: 20px;
 	}
 
 	&__btn {
 	}
 
-	&__options {
+	&__card-link {
+		color: $black;
+		position: relative;
+		display: block;
+		top: 0;
+		left: 0;
+		svg{
+			position: absolute;
+			right: -20px;
+			top: 15px;
+		}
+	}
+
+	&__card:last-child{
+		position: relative;
+	}
+	&__card-link{
+		position: absolute;
+		left: 50px;
+		top: 90%;
+		color: #fff;
+		font-size: 20px;
+		font-weight: 500;
+		svg{
+			position: absolute;
+			top: -2px;
+			right: -15px;
+		}
+	}
+}
+
+@media(max-width: 480px){
+	.placement{
+		&__card, &__card:last-child{
+			max-width: 290px;
+		}
+		&__card-link{
+			left: 20px;
+			top: 85%;
+		}
 	}
 }
