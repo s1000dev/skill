@@ -85,6 +85,7 @@ img{
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		z-index: 20;
 		
 			li{
 				margin-bottom: 35px;
@@ -115,7 +116,9 @@ img{
 		align-items: center;
 	}
 
+	
 	&__mobile{
+		z-index: 21;
 		display: none;
 		position: relative;
 		top: 8px;
@@ -219,9 +222,6 @@ img{
 
 .offers {
 	margin-bottom: 84px;
-
-	&__inner {
-	}
 
 	&__title {
 		margin-bottom: 30px;
@@ -413,9 +413,6 @@ img{
 .services {
 	margin-bottom: 82px;
 
-	&__inner {
-	}
-	
 	&__title {
 		margin-bottom: 30px;
 	}
@@ -563,9 +560,6 @@ img{
 
 .pros {
 	margin-bottom: 82px;
-	
-	&__inner {
-	}
 
 	&__title {
 		margin-bottom: 30px;
@@ -584,9 +578,6 @@ img{
 		border-radius: 15px;
 	}
 
-	&__card-img {
-	}
-
 	&__text {
 		margin: 0;
 		margin-top: 7px;
@@ -599,9 +590,6 @@ img{
 //!!!!!!!!!!!!!
 
 .placement {
-
-	&__inner {
-	}
 
 	&__title {
 		margin-bottom: 31px;
@@ -617,9 +605,6 @@ img{
 	&__card {
 		max-width: 374px;
 		max-height: 440px;
-	}
-
-	&__img{
 	}
 
 	&__card-inner {
@@ -653,9 +638,6 @@ img{
 		gap: 6px;
 	}
 
-	&__info {
-	}
-
 	&__name {
 		color: $black;
 		margin-bottom: 16px;
@@ -664,9 +646,6 @@ img{
 	&__location {
 		color: $light-grey;
 		margin-bottom: 20px;
-	}
-
-	&__btn {
 	}
 
 	&__card-link {
@@ -708,6 +687,162 @@ img{
 		&__card-link{
 			left: 20px;
 			top: 85%;
+		}
+	}
+}
+
+//!!!!!!!!!!!!
+
+.tour {
+	margin-top: 60px;
+
+	&__inner {
+		background-color: #E9E9E9;
+		padding: 45px;
+		border-radius: 15px;
+	}
+
+	&__title {
+		margin-bottom: 30px;
+		margin-left: -5px;
+	}
+
+	&__form {
+		display: flex;
+		padding: 32px 28px;
+		background-color: $white;
+		border-radius: 15px;
+	}
+
+	&__item {
+		label{
+			color: $black;
+			font-size: 12px;
+			line-height: normal;
+		}
+		input,select{
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+			border: none;
+			cursor: pointer;
+		}
+	}
+
+	&__city {
+	}
+
+	&__country {
+	}
+
+	&__date {
+	}
+
+	&__button {
+		padding: 11px 29px;
+	}
+}
+
+@media(max-width: 1200px){
+	.tour{
+		&__form{
+			flex-direction: column;
+			gap: 20px;
+			max-width: 50%;
+    		margin: 0 auto;
+		}
+	}
+}
+
+@media(max-width: 768px){
+	.tour{
+		&__form{
+			padding: 22px 18px;
+			max-width: 100%;
+		}
+	}
+}
+
+.footer {
+	margin-top: 60px;
+	
+	&__inner {
+		border-radius: 15px;
+		background-color: #333;
+		padding: 45px;
+	}
+
+	&__box {
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+
+	&__left {
+		color: #FFF;
+		font-size: 16px;
+		line-height: 190%;
+		max-width: 302px;
+		margin-right: 125px;
+	}
+
+	&__copy {
+	}
+
+	&__parapraph {
+	}
+
+	&__link-left {
+		color: #C93;
+		font-size: 16px;
+		line-height: 150%;
+	}
+
+	&__center {
+	}
+
+	&__address {
+		color: #FFF;
+		font-size: 16px;
+		line-height: 190%;
+	}
+
+	&__phones {
+		margin-bottom: 15px;
+	}
+
+	&__link {
+		color: #C93;
+		font-size: 16px;
+		line-height: 150%;
+	}
+
+	&__mails {
+	}
+
+	&__right {
+		margin-left: auto;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+}
+
+@media(max-width: 992px){
+	.footer{
+		&__inner{
+			padding: 25px;
+		}
+		&__box{
+			flex-direction: column;
+		}
+		&__left{
+			max-width: 100%;
+		}
+		&__right{
+			margin: 0;
+			margin-top: 20px;
+			flex-direction: row;
 		}
 	}
 }

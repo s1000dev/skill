@@ -185,6 +185,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 20;
 }
 .header__list-mobile li {
   margin-bottom: 35px;
@@ -212,6 +213,7 @@ img {
   align-items: center;
 }
 .header__mobile {
+  z-index: 21;
   display: none;
   position: relative;
   top: 8px;
@@ -673,5 +675,114 @@ img {
   .placement__card-link {
     left: 20px;
     top: 85%;
+  }
+}
+.tour {
+  margin-top: 60px;
+}
+.tour__inner {
+  background-color: #E9E9E9;
+  padding: 45px;
+  border-radius: 15px;
+}
+.tour__title {
+  margin-bottom: 30px;
+  margin-left: -5px;
+}
+.tour__form {
+  display: flex;
+  padding: 32px 28px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+.tour__item label {
+  color: #000;
+  font-size: 12px;
+  line-height: normal;
+}
+.tour__item input, .tour__item select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  cursor: pointer;
+}
+.tour__button {
+  padding: 11px 29px;
+}
+
+@media (max-width: 1200px) {
+  .tour__form {
+    flex-direction: column;
+    gap: 20px;
+    max-width: 50%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 768px) {
+  .tour__form {
+    padding: 22px 18px;
+    max-width: 100%;
+  }
+}
+.footer {
+  margin-top: 60px;
+}
+.footer__inner {
+  border-radius: 15px;
+  background-color: #333;
+  padding: 45px;
+}
+.footer__box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.footer__left {
+  color: #FFF;
+  font-size: 16px;
+  line-height: 190%;
+  max-width: 302px;
+  margin-right: 125px;
+}
+.footer__link-left {
+  color: #C93;
+  font-size: 16px;
+  line-height: 150%;
+}
+.footer__address {
+  color: #FFF;
+  font-size: 16px;
+  line-height: 190%;
+}
+.footer__phones {
+  margin-bottom: 15px;
+}
+.footer__link {
+  color: #C93;
+  font-size: 16px;
+  line-height: 150%;
+}
+.footer__right {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (max-width: 992px) {
+  .footer__inner {
+    padding: 25px;
+  }
+  .footer__box {
+    flex-direction: column;
+  }
+  .footer__left {
+    max-width: 100%;
+  }
+  .footer__right {
+    margin: 0;
+    margin-top: 20px;
+    flex-direction: row;
   }
 }

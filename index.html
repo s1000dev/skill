@@ -465,7 +465,82 @@
 				</div>
 			</div>
 		</section>
+		<section class="tour">
+			<div class="container">
+				<div class="tour__inner">
+					<h2 class="tour__title title">Хочу тур</h2>
+					<form action="https://jsonplaceholder.typicode.com/posts" class="tour__form" autocomplete method="POST">
+						<div class="tour__item">
+							<label for="city">Город вылета</label>
+							<select id="city" name="city" class="tour__city">
+								<option value="saint-petersburg" selected>Санкт-Петербург</option>
+								<option value="moscow">Москва</option>
+								<option value="sochi">Сочи</option>
+							</select>
+						</div>
+						<div class="tour__item">
+							<label for="country">Страна</label>
+							<select id="country" name="country" class="tour__country">
+								<option value="australia" selected>Австралия</option>
+								<option value="russia">Россия</option>
+								<option value="usa">США</option>
+							</select>
+						</div>
+						<div class="tour__item">
+							<label for="date">Дата прибытия</label>
+							<input id="date" type="date" class="tour__date" name="date" value="2021-10-18">
+						</div>
+						<div class="tour__item">
+							<label for="nights">Ночей</label>
+							<input id="nights" type="number" name="nights" value="6">
+						</div>
+						<div class="tour__item">
+							<label for="tourists">Туристы</label>
+							<input id="tourists" type="number" name="tourists" value="2">
+						</div>
+						<div class="tour__item">
+							<button class="tour__button btn" type='submit'>Найти</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
 	</main>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<div class="footer__box">
+					<div class="footer__left">
+						<p class="footer__copy">© 2012–2020 Управляющая компания Объединённой сети «Лагуна Хотелс»</p>
+						<p class="footer__parapraph">Представленная на сайте информация носит справочный характер и не является публичной офертой</p>
+						<a href="#" class="footer__link-left">Пользовательское соглашение</a>
+					</div>
+					<div class="footer__center">
+						<p class="footer__address">11710, улица Юности, дом 5 строение 4, офис 2</p>
+						<ul class="footer__phones">
+							<li><a href="tel:7-499-535-64-34" class="footer__link">+7 499 535-64-34</a></li>
+							<li><a href="tel:7-495-005-05-44" class="footer__link">+7 495 005-05-44</a></li>
+						</ul>
+						<ul class="footer__mails">
+							<li><a href="mailto:lg.oona@mail.ru" class="footer__link">lg.oona@mail.ru</a></li>
+							<li><a href="mailto:hotels.ln@mail.ru" class="footer__link">hotels.ln@mail.ru</a></li>
+						</ul>
+					</div>
+					<div class="footer__right">
+						<a href="#" class="footer__link-icon">
+							<img src="img/footer-1.svg" alt="">
+						</a>
+						<a href="#" class="footer__link-icon">
+							<img src="img/footer-2.svg" alt="">
+						</a>
+						<a href="#" class="footer__link-icon">
+							<img src="img/footer-3.svg" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 	<script src="js/app.js"></script>
 </body>
 
